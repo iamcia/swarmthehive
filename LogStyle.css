@@ -1,0 +1,260 @@
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(45deg, #edb832, #e9be3f);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  place-items: center;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  animation: backgroundShift 10s infinite
+}
+
+@keyframes backgroundShift {
+  0% { background-color: #edb832; }
+  50% { background-color: #e9be3f; }
+  100% { background-color: #edb832; }
+}
+
+/* Bee container */
+.bee {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: url("img/bees.png") no-repeat center center;
+  background-size: contain;
+  z-index: -1; /* Ensure bees are behind the container */
+  opacity: 0.8;
+}
+
+/* Animation for the bees */
+@keyframes fly {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  20% { transform: translate(100px, -100px) rotate(30deg); }
+  40% { transform: translate(-100px, 100px) rotate(60deg); }
+  60% { transform: translate(100px, -50px) rotate(90deg); }
+  80% { transform: translate(-100px, 100px) rotate(120deg); }
+  100% { transform: translate(0, 0) rotate(150deg); }
+}
+
+/* Position and animation for each bee */
+.bee1 {
+  top: 10%;
+  left: 10%;
+  animation: fly 5s infinite ease-in-out;
+}
+
+.bee2 {
+  top: 55%;
+  left: 90%;
+  animation: fly 7s infinite ease-in-out;
+}
+
+.bee3 {
+  top: 80%;
+  left: 20%;
+  animation: fly 9s infinite ease-in-out;
+}
+
+.bee4 {
+  top: 10%;
+  left: 75%;
+  animation: fly 11s infinite ease-in-out;
+}
+
+/* Container styles */
+.container {
+  position: relative;
+  width: 350px;
+  height: 580px;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #edb832;
+  box-shadow: 14px 14px 20px #d9a72c, -14px -14px 20px #f5c94a;
+  z-index: 1; /* Ensure the container is on top of the bees */
+}
+
+.brand-logo {
+  height: 100px;
+  width: 100px;
+  background: url("../img/swarmcircle.png") ;
+  background-size: 80px 80px; /* Ensures the image fits within the logo area without distortion */
+  background-position: center; /* Centers the image within the container */
+  background-repeat: no-repeat;
+  margin: auto;
+  border-radius: 50%;
+  box-sizing: border-box;
+  box-shadow: 14px 14px 20px #d9a72c, -14px -14px 20px #f5c94a;
+}
+
+.brand-logo img {
+    height: 80px;
+    width: 80px;
+}
+
+.brand-logo background {
+  height: 20px;
+  width: 50px;
+  margin: auto;
+  
+}
+
+.brand-title {
+  margin-top: 10px;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.inputs {
+  text-align: left;
+  margin-top: 30px;
+  color: white;
+}
+
+label, input, button {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+label {
+  margin-bottom: 4px;
+  color: #fff;
+}
+
+label:nth-of-type(2) {
+  margin-top: 12px;
+}
+
+input::placeholder {
+  color: #e8e8e8;
+}
+
+input {
+  background: #edb832;
+  padding: 10px;
+  padding-left: 20px;
+  height: 50px;
+  font-size: 14px;
+  border-radius: 50px;
+  box-shadow: inset 6px 6px 6px #d9a72c, inset -6px -6px 6px #f5c94a;
+ color: white;
+}
+
+button {
+  color: #edb832;
+  margin-top: 20px;
+  background: white;
+  height: 40px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: 6px 6px 6px #d9a72c, -6px -6px 6px #f5c94a;
+  transition: 0.3s ease-in-out;
+}
+
+/* Hover effect for the glow */
+button:hover {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.6);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+a {
+  position: absolute;
+  font-size: 8px;
+  bottom: 4px;
+  right: 4px;
+  text-decoration: none;
+  color: black;
+  background: yellow;
+  border-radius: 10px;
+  padding: 2px;
+}
+
+h1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.need-help {
+  width: 120px;
+  height: 100px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #edb832;
+  color: white;
+  padding: 2px;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 4px 4px 8px #d9a72c, -4px -4px 8px #f5c94a;
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Hover effect for Need Help button */
+.need-help:hover {
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.6);
+  transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+/* Invalid Password Message */
+#invalid-password-msg {
+    font-size: 12px;
+    color: red;
+    margin-top: 5px;
+    text-align: right;
+}
+
+/* Forgot Password Box */
+.forgot-password-box {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #edb832;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px #d9a72c, -6px -6px 10px #f5c94a;
+}
+
+.forgot-password-box h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.forgot-password-box input[type="email"],
+.forgot-password-box input[type="password"] {
+    background: #edb832;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    border-radius: 20px;
+    box-shadow: inset 5px 5px 5px #d9a72c, inset -5px -5px 5px #f5c94a;
+    width: 100%;
+}
+
+.forgot-password-box input[type="submit"] {
+    background: white;
+    color: #edb832;
+    font-weight: 700;
+    border-radius: 20px;
+    margin-top: 15px;
+    cursor: pointer;
+    box-shadow: 6px 6px 10px #d9a72c, -6px -6px 10px #f5c94a;
+}
+
+.forgot-password-box input[type="submit"]:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 0.6);
+    transition: box-shadow 0.3s ease-in-out;
+}

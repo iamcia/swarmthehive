@@ -1,0 +1,86 @@
+body {
+    background: url('img/bgwelreg.jpg') no-repeat center center fixed; /* Updated background image */
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    overflow: hidden;
+    width: 400px;
+    text-align: center;
+    padding: 20px;
+}
+
+.registration-form {
+    background: linear-gradient(135deg, #ffd700, #ff8c00, #f08030);
+    border-radius: 10px;
+    padding: 60px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+p {
+    color: #111111;
+}
+
+.white-text {
+    color: white; /* Make the "of" text white */
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    color: #fff;
+    flex: 1;
+    text-align: left;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: #000000;
+    outline: none;
+}
+
+input::placeholder {
+    color: #000000;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ffd500;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e68a00;
+}
