@@ -1,0 +1,189 @@
+.search-filter-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.form-group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group input[type="text"],
+.form-group select,
+.form-group input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    flex: 1;
+    width: 300px;
+    padding: 8px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background: #333;
+    color: #fff;
+}
+
+.form-group button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 8px 15px;
+    background: #007bff;
+    color: #fff;
+    margin-right: 10px;
+}
+
+.form-group button:hover {
+    background-color: #45a049;
+    background: #0056b3;
+}
+
+.form-group label {
+    display: block;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.table-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th {
+    background-color: #f5f5f5;
+    padding: 12px;
+    text-align: left;
+    font-weight: 500;
+    color: #333;
+    border-bottom: 2px solid #ddd;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+td button, 
+td .view-btn {
+    padding: 6px 12px;
+    margin: 0 4px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+td button[name="delete"] {
+    background-color: #ff4444;
+    color: white;
+}
+
+td button[name="approve"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+td button[name="disapprove"] {
+    background-color: #ff9800;
+    color: white;
+}
+
+.view-btn {
+    background-color: #2196F3;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+}
+
+td button:hover,
+.view-btn:hover {
+    opacity: 0.9;
+}
+
+/* Access Code Container Styles */
+.access-code-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.generate-form, .save-form, .send-form {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f5f5f5;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.generate-form h3, .send-form h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #333;
+    font-size: 16px;
+    font-family: inherit;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 8px 12px;
+    box-shadow: none;
+    width: 100%;
+}
+
+.form-group button[name="generate"],
+.form-group button[name="saveOwner"],
+.form-group button[name="saveTenant"],
+.form-group button[name="send"] {
+    background: #007bff;
+    color: #ffffff;
+    border: none;
+    font-weight: normal;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.form-group button:hover {
+    background: #0056b3;
+    transform: none;
+    box-shadow: none;
+}
+
+.form-group label {
+    color: #333;
+    font-weight: 500;
+    text-transform: none;
+    font-size: 14px;
+    letter-spacing: normal;
+}

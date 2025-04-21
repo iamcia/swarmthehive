@@ -1,0 +1,202 @@
+/* Navigation Bar Styles */
+nav {
+  position: relative;
+  width: 85%;
+  margin: 20px auto;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  background-color: #333; 
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+nav a {
+  position: relative;
+  width: 33.333%;
+  color: #f8f8f8;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  padding: 12px 20px;
+  text-align: center;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+nav a:hover, nav a.active {
+  background-color: #575757;
+  color: #ffffff;
+}
+
+#indicator {
+  position: absolute;
+  bottom: 0;
+  width: 33.333%;
+  height: 3px;
+  background-color: #edb832;
+  transition: 0.3s ease left;
+  border-radius: 2px;
+}
+
+/* Section Styles */
+section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 1200px;
+  background-color: #1c1c1c;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  color: #e0e0e0;
+}
+
+/* Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #444;
+  color: #dcdcdc;
+}
+
+table th {
+  background-color: #333333;
+  color: #f0f0f0;
+}
+
+/* Button Styles */
+.action-btn {
+  padding: 6px 12px;
+  font-weight: bold;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+  transition: 0.3s ease;
+}
+
+/* Matching Button with Indicator Color */
+.view-btn {
+  background-color: #f7b733; /* Matches indicator color */
+}
+
+.view-btn:hover {
+  background-color: #f59827;
+}
+
+.update-btn {
+  background-color: #1c871f; /* Green for "Update" */
+}
+
+.update-btn:hover {
+  background-color: #509f3c
+}
+
+.disapprove-btn,
+.remove-btn {
+  background-color: #ff4040; /* Red for "Remove" */
+}
+
+.disapprove-btn:hover,
+.remove-btn:hover {
+  background-color: #fa3354;
+}
+
+
+
+/* Filter Section */
+.filter-section {
+  margin-bottom: 20px;
+  color: #e0e0e0;
+}
+
+.filters label {
+  font-size: 14px;
+  margin-right: 8px;
+  color: #b3b3b3;
+}
+
+.filters input,
+.filters select {
+  padding: 8px;
+  font-size: 14px;
+  margin-right: 10px;
+  border-radius: 5px;
+  background-color: #2b2b2b;
+  color: #e0e0e0;
+  border: 1px solid #444;
+}
+
+.filters button {
+  padding: 8px 15px;
+  font-size: 14px;
+  background-color: #ffd700; /* Matches indicator color */
+  color: #1c1c1c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filters button:hover {
+  background-color: #e6c200;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  nav {
+      width: 100%;
+      margin: 20px 0;
+      flex-direction: column;
+  }
+
+  nav a {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .filter-section {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+
+  .filters input,
+  .filters select,
+  .filters button {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+}
+
+ #addAccountButton {
+        background-color: #008CBA; /* Accent color */
+        color: #fff;
+        border: none;
+        padding: 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    #addAccountButton:hover {
+        background-color: #005f7a; /* Darker shade on hover */
+    }

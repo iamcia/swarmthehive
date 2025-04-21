@@ -1,0 +1,156 @@
+main {
+    margin-top: 1.4rem;
+    width: auto;
+}
+
+main .insights {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.6rem;
+}
+
+main .insights>div {
+    background-color: #2c2f33;
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all .3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+main .insights>div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+main .insights>div span {
+    padding: 0.8rem;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 2rem;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.large {
+    flex-grow: 1;
+    height: 180px;
+}
+
+.statistic-graph {
+    margin-top: 1rem;
+    width: 100%;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.statistic-graph:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.statistic-graph .bar {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.5s ease;
+}
+
+main .insights .approval {
+    background: linear-gradient(135deg, #1d3557, #457b9d);
+}
+
+main .insights .approval span {
+    background: #457b9d;
+}
+
+main .insights .pending {
+    background: linear-gradient(135deg, #ffb703, #fb8500);
+}
+
+main .insights .pending span {
+    background: #fb8500;
+}
+
+main .insights .completed {
+    background: linear-gradient(135deg, #06d6a0, #118ab2);
+}
+
+main .insights .completed span {
+    background: #06d6a0;
+}
+
+main .insights .performance {
+    background: linear-gradient(135deg, #8e44ad, #9b59b6);
+}
+
+main .insights .performance span {
+    background: #9b59b6;
+}
+
+main .insights .user-management {
+    background: linear-gradient(135deg, #2980b9, #3498db);
+}
+
+main .insights .user-management span {
+    background: #3498db;
+}
+
+main .insights .announcements {
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+}
+
+main .insights .announcements span {
+    background: #e67e22;
+}
+
+main .insights .market-overview {
+    background: linear-gradient(135deg, #2c3e50, #34495e);
+}
+
+main .insights .market-overview span {
+    background: #34495e;
+}
+
+main .insights .service-request {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+}
+
+main .insights .service-request span {
+    background: #c0392b;
+}
+
+main .insights .financial-overview {
+    background: linear-gradient(135deg, #16a085, #1abc9c);
+}
+
+main .insights .financial-overview span {
+    background: #1abc9c;
+}
+
+main .insights .community-insights {
+    background: linear-gradient(135deg, #27ae60, #2ecc71);
+}
+
+main .insights .community-insights span {
+    background: #2ecc71;
+}
+
+main .insights .audit-logs {
+    background: linear-gradient(135deg, #e67e22, #d35400);
+}
+
+main .insights .audit-logs span {
+    background: #d35400;
+}
+
+main h1,
+main .insights h3,
+main .insights p,
+main .insights small {
+    color: #fff;
+}

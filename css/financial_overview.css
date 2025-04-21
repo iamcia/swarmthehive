@@ -1,0 +1,82 @@
+:root {
+    --clr-primary: #e9be3a;
+    --clr-danger: #ff7782;
+    --clr-success: #41f1b6;
+    --clr-white: #181a1e;
+    --clr-info-dark: #7d8da1;
+    --clr-info-light: #dce1eb;
+    --clr-dark: #ffffff;
+    --clr-light: rgba(255, 255, 255, 0.4);
+    --clr-primary-variant: #222222;
+    --clr-dark-variant: #999999;
+    --clr-color-background: #0d0d0d;
+    --card-border-radius: 2rem;
+    --card-padding: 1.8rem;
+    --box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.6);
+}
+
+body {
+    background-color: var(--clr-color-background);
+    color: var(--clr-dark);
+}
+
+aside {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+main {
+    margin-top: 1.4rem;
+    width: auto;
+}
+
+.filter-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.filter-container input,
+.filter-container select {
+    padding: 0.8rem;
+    border: 1px solid var(--clr-dark-variant);
+    border-radius: var(--border-radius-1);
+    background: none;
+    color: var(--clr-dark);
+}
+
+.filter-container select {
+    cursor: pointer;
+}
+
+.table-container {
+    overflow-x: auto;
+    background-color: transparent;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--clr-dark-variant);
+}
+
+th {
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+}
+
+.chart-container {
+    margin-top: 2rem;
+}
+
+canvas {
+    border-radius: var(--card-border-radius);
+}

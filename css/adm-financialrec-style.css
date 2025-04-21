@@ -1,0 +1,52 @@
+filter-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.filter-container input,
+.filter-container select {
+  padding: 0.8rem;
+  border: 1px solid var(--clr-dark-variant);
+  border-radius: var(--border-radius-1);
+  background: none;
+  color: var(--clr-dark);
+}
+
+.filter-container select {
+  cursor: pointer;
+}
+
+.table-container {
+  overflow-x: auto;
+  background-color: transparent;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--clr-dark-variant);
+}
+
+th {
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+}
+
+.chart-container {
+  margin-top: 2rem;
+}
+
+canvas {
+  border-radius: var(--card-border-radius);
+}
+
+.header-actions {
+  margin-right: -115px;
+}
